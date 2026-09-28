@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Match Randomizer V2</title>
+<title>Disney + Pixar Match Randomizer</title>
 <style>
 *{box-sizing:border-box}
 html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#111;font-family:Arial,Helvetica,sans-serif}
@@ -58,17 +58,19 @@ opacity:0;pointer-events:none;text-shadow:0 2px 5px rgba(0,0,0,.08)}
  </div>
 </div>
 <div id="start"><div>
- <h1>Match Randomizer</h1>
+ <h1>Disney + Pixar Match</h1>
  <p>❌ passa, ♥ dá like e ★ dá super like. Você também pode arrastar para esquerda, direita ou para cima.</p>
  <button id="cameraBtn">ATIVAR CÂMERA</button><div id="status"></div>
 </div></div>
 <script>
 const profiles=[
-["Brigadeiro","Brigadeiro"],["Pudim de leite condensado","Pudim_de_leite_condensado"],["Quindim","Quindim"],
-["Paçoca","Paçoca"],["Cocada","Cocada"],["Pamonha","Pamonha"],["Bolo de rolo","Bolo_de_rolo"],
-["Romeu e Julieta","Romeu_e_Julieta"],["Goiabada","Goiabada"],["Pé de moleque","Pé_de_moleque"],
-["Beijinho","Beijinho_(doce)"],["Maria-mole","Maria-mole"],["Bolo de cenoura","Bolo_de_cenoura"],
-["Doce de leite","Doce_de_leite"],["Bolinho de chuva","Bolinho_de_chuva"]
+["Mickey Mouse","Mickey_Mouse"],["Minnie Mouse","Minnie_Mouse"],["Donald Duck","Donald_Duck"],
+["Stitch","Stitch_(Lilo_%26_Stitch)"],["Elsa","Elsa_(Frozen)"],["Ariel","Ariel_(The_Little_Mermaid)"],
+["Simba","Simba"],["Aladdin","Aladdin_(Disney_character)"],["Mulan","Mulan_(Disney_character)"],
+["Rapunzel","Rapunzel_(Tangled)"],["Woody","Woody_(Toy_Story)"],["Buzz Lightyear","Buzz_Lightyear"],
+["Lightning McQueen","Lightning_McQueen"],["Mike Wazowski","Mike_Wazowski"],["Sulley","James_P._Sullivan"],
+["WALL-E","WALL-E_(character)"],["Remy","Remy_(Ratatouille)"],["Nemo","Nemo_(Finding_Nemo)"],
+["Joy","Joy_(Inside_Out)"],["Mr. Incredible","Mr._Incredible"]
 ];
 const $=id=>document.getElementById(id);
 const camera=$("camera"),card=$("card"),photo=$("photo"),loading=$("loading"),start=$("start"),
